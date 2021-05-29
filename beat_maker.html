@@ -70,7 +70,7 @@
       <div class="hihat-tracker">
         <div class="control">
           <h2>Hihat</h2>
-          <button data-track="0" class="mute hihat-btn">
+          <button data-track="2" class="mute hihat-btn">
             <i class="fas fa-volume-mute"></i>
           </button>
           <select name="hihat" id="hihat-select">
@@ -92,6 +92,11 @@
         </div>
       </div>
       <button class="play">Play</button>
+
+      <div class="slider-box">
+        <input type="range" max="300" min="20" class="slider-bar" value="150" />
+        <p>Speed:<span class="slider-value">150</span></p>
+      </div>
     </div>
 
     <audio src="./sound/hihat-acoustic01.wav" class="hihat-audio"></audio>
