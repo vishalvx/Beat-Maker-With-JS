@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beat Maker</title>
+    <link rel="stylesheet" href="./beat_maker.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="sequancer">
+      <div class="kick-tracker">
+        <div class="control">
+          <h2>Kick</h2>
+          <button data-track="0" class="mute kick-btn">
+            <i class="fas fa-volume-mute"></i>
+          </button>
+          <select name="kick" id="kick-select">
+            <option value="./sound/kick-acoustic01.wav">Kick Acoustic</option>
+            <option value="./sound/kick-808.wav">Kick 808</option>
+            <option value="./sound/kick-classic.wav">Kick classic</option>
+          </select>
+        </div>
+        <div class="kick">
+          <div class="pad kick-pad beat0"></div>
+          <div class="pad kick-pad beat1"></div>
+          <div class="pad kick-pad beat2"></div>
+          <div class="pad kick-pad beat3"></div>
+          <div class="pad kick-pad beat4"></div>
+          <div class="pad kick-pad beat5"></div>
+          <div class="pad kick-pad beat6"></div>
+          <div class="pad kick-pad beat7"></div>
+          <div class="pad kick-pad beat8"></div>
+          <div class="pad kick-pad beat9"></div>
+        </div>
+      </div>
+
+      <div class="snare-tracker">
+        <div class="control">
+          <h2>Snare</h2>
+          <button data-track="1" class="mute snare-btn">
+            <i class="fas fa-volume-mute"></i>
+          </button>
+          <select name="snare" id="snare-select">
+            <option value="./sound/snare-acoustic01.wav">Snare Acoustic</option>
+            <option value="./sound/snare-808.wav">Snare 808</option>
+            <option value="./sound/snare-vinyl01.wav">Snare vinyl01</option>
+          </select>
+        </div>
+        <div class="snare">
+          <div class="pad snare-pad beat0"></div>
+          <div class="pad snare-pad beat1"></div>
+          <div class="pad snare-pad beat2"></div>
+          <div class="pad snare-pad beat3"></div>
+          <div class="pad snare-pad beat4"></div>
+          <div class="pad snare-pad beat5"></div>
+          <div class="pad snare-pad beat6"></div>
+          <div class="pad snare-pad beat7"></div>
+          <div class="pad snare-pad beat8"></div>
+          <div class="pad snare-pad beat9"></div>
+        </div>
+      </div>
+
+      <div class="hihat-tracker">
+        <div class="control">
+          <h2>Hihat</h2>
+          <button data-track="0" class="mute hihat-btn">
+            <i class="fas fa-volume-mute"></i>
+          </button>
+          <select name="hihat" id="hihat-select">
+            <option value="./sound/hihat-acoustic01.wav">Hihat Acoustic</option>
+            <option value="./sound/hihat-808.wav">Hihat 808</option>
+          </select>
+        </div>
+        <div class="hihat">
+          <div class="pad hihat-pad beat0"></div>
+          <div class="pad hihat-pad beat1"></div>
+          <div class="pad hihat-pad beat2"></div>
+          <div class="pad hihat-pad beat3"></div>
+          <div class="pad hihat-pad beat4"></div>
+          <div class="pad hihat-pad beat5"></div>
+          <div class="pad hihat-pad beat6"></div>
+          <div class="pad hihat-pad beat7"></div>
+          <div class="pad hihat-pad beat8"></div>
+          <div class="pad hihat-pad beat9"></div>
+        </div>
+      </div>
+      <button class="play">Play</button>
+    </div>
+
+    <audio src="./sound/hihat-acoustic01.wav" class="hihat-audio"></audio>
+    <audio src="./sound/snare-acoustic01.wav" class="snare-audio"></audio>
+    <audio src="./sound/kick-acoustic01.wav" class="kick-audio"></audio>
+
+    <script src="./beat_maker.js"></script>
+  </body>
+</html>
